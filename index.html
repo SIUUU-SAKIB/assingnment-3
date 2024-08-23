@@ -24,7 +24,7 @@
   <body>
     <section
       id="hero"
-      class="max-w-screen-2xl mx-auto bg-gradient-to-b from-[#dbdbdb40] to-white h-screen"
+      class="max-w-screen-2xl mx-auto bg-gradient-to-b from-[#dbdbdb40] to-white h-[100vh]"
     >
       <!-- navigation -->
 
@@ -42,23 +42,33 @@
         <div
           class="hiddden xl:flex xxl:items-center xxl:justify-center space-x-4"
         >
-          <h2 class="hidden xl:cursor-pointer xl:font-bold xl:inline-block xl:text-base text-slate-950">
+          <h2
+            class="hidden xl:cursor-pointer xl:font-bold xl:inline-block xl:text-base text-slate-950"
+          >
             Home
           </h2>
-          <h2 class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol">
+          <h2
+            class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol"
+          >
             Services
           </h2>
-          <h2 class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol">
+          <h2
+            class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol"
+          >
             Portfolio
           </h2>
-          <h2 class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol">
+          <h2
+            class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol"
+          >
             Blogs
           </h2>
-          <h2 class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol">
+          <h2
+            class="hidden xl:cursor-pointer xl:inline-block xl:text-base xl:text-navTxtCol"
+          >
             Contact Us
           </h2>
         </div>
-<!--part-2// -->
+        <!--part-2// -->
         <!-- part-3 -->
         <div
           class="(nav-3) flex flex-row space-x-4 justify-center items-center"
@@ -92,7 +102,7 @@
           </div>
 
           <div
-            class="hamburger flex flex-col space-y-1 w-[40px] h-[40px] bg-white rounded-3xl justify-center items-center"
+            class="xl:hidden hamburger flex flex-col space-y-1 w-[40px] h-[40px] bg-white rounded-3xl justify-center items-center"
           >
             <div class="w-[20px] h-px bg-slate-950"></div>
             <div class="w-[20px] h-px bg-slate-950"></div>
@@ -101,8 +111,79 @@
         </div>
         <!-- part-3//// -->
       </nav>
-
       <!-- end of navigation -->
+
+      <!-- hero -->
+      <div
+        id="hero"
+        class="flex flex-col items-center justify-center space-y-10 md:space-y-5 py-10 mt-5"
+      >
+        <img src="/assets/banner.png" alt="" />
+        <h1
+          class="text-center leading-10 max-w-[700px] text-black font-bold text-[40px] md:text-[50px] md:leading-tight xl:text-[64px] xl:max-w-[900px]"
+        >
+          A barn house of this design has a striking appearance
+        </h1>
+        <p
+          class="text-center text-txtCol font-medium text-sm px-2 max-w-3xl md:text-xl md:font-medium"
+        >
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+
+        <div
+          class="relative px-32 py-4 rounded-full space-x-2 bg-[#acef5f82] text-black text-lg flex flex-row justify-center items-center md:px-16 md:mt-2"
+        >
+          <h2 class="font-bold">View Details</h2>
+          <img src="./assets/arrow.png" class="p-2 ml-2 bg-btnBg rounded-xl" />
+        </div>
+      </div>
+
+      <!-- hero// -->
     </section>
+    <!-- about us -->
+
+    <section id="about-us" class="bg-bgColor mx-auto max-w-screen-2xl h-[100vh]">
+      <!-- arrow -->
+      <div class="flex justify-center items-center space-y-4 px-2">
+        <div class="mt-4 px-2 py-1 bg-white rounded-2xl text-center flex justify-center items-center space-x-3 text-black">
+          <img src="./assets/right-ar.png" class="w-5 h-5" alt="" />
+          <p>About Us</p>
+        </div>
+      </div>
+
+      <!--heading -->
+       <h2 class="text-black text-[28px] mt-4 font-bold text-center max-w-sm mx-auto px-1">We design thoughtful, liveable spaces</h2>
+       <p class="text-center text-[14px] text-black max-w-sm mx-auto mt-4">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+  
+
+       <!-- card-1 -->
+       <div class="flex flex-col space-y-4 justify-center items-center md:flex-row md:w-md" >
+        <div class=" relative flex flex-row mt-4 px-12 mx-auto max-w-[350px] space-x-6 py-3 bg-white">
+          <img src="./assets/commercial.png" class="absolute left-3 top-3 w-[50px] h-[50px]" alt="">
+  
+  
+          <div class="flex flex-col space-x-4 px-2 ">
+            <p class="text-base font-bold text-subTxtCol ml-4">Commercial</p>
+            <p class="text-subTxtCol text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+         </div>
+         <!-- card-2 -->
+         <div class=" relative flex flex-row mt-4 px-12 mx-auto max-w-[350px] space-x-6 py-3 bg-white">
+          <img src="./assets/residential.png" class="absolute left-3 top-3 w-[50px] h-[50px]" alt="">
+  
+  
+          <div class="flex flex-col space-x-4 px-2 ">
+            <p class="text-base font-bold text-subTxtCol ml-4">residential</p>
+            <p class="text-subTxtCol text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+         </div>
+       </div>
+
+       <img src="./assets/Rectangle.png" class="mt-4 w-[350px] h-auto mx-auto md:w-[100%] md:h-[50%] md:px-4" alt="">
+    </section>
+
+    <!-- about us /// -->
   </body>
 </html>
