@@ -4,7 +4,3 @@
 body{
     color: #d7d7d763;
 }
-
-.bg{
-    @apply bg-[url("")]
-}
