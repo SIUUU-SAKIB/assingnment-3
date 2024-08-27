@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     extend: {
+      backgroundImage:{
+              'hero-pattern': "url('/assets/bg.jpg')"
+      },
       height:{
 //         sm (640px)	max-width: 640px;
 // md (768px)	max-width: 768px;
@@ -11,7 +14,7 @@ module.exports = {
 // 2xl (1536px)	max-width: 1536px;
       },
       screens:{
-        sm:`450px`
+        sm:`450px`,
       },
       colors:{
         txtCol: `#212121`,
