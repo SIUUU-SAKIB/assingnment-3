@@ -1368,6 +1368,18 @@ body{
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .md\:rounded-2xl {
     border-radius: 1rem;
   }
@@ -1524,6 +1536,10 @@ body{
     margin-left: 20px;
   }
 
+  .xl\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .xl\:inline-block {
     display: inline-block;
   }
@@ -1647,6 +1663,24 @@ body{
     margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .xl\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .xl\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .xl\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
   .xl\:self-center {
     align-self: center;
   }
@@ -1705,8 +1739,17 @@ body{
     padding-right: 300px;
   }
 
+  .xl\:px-\[250px\] {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
   .xl\:pr-20 {
     padding-right: 5rem;
+  }
+
+  .xl\:pt-5 {
+    padding-top: 1.25rem;
   }
 
   .xl\:text-center {
